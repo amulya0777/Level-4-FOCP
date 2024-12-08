@@ -1,10 +1,8 @@
 from collections import Counter
 
 def frequency_analysis(text):
-    counts = Counter(text.lower())
-    letters_only = {char: count for char, count in counts.items() if char.isalpha()}
-    most_common = sorted(letters_only.items(), key=lambda x: (-x[1], x[0]))[:6]
-    return most_common
+    counts = Counter(char for char in text.lower() if char.isalpha())
+    return counts.most_common(6)
 
 # Test
 text = input("Enter the text to analyze: ")
