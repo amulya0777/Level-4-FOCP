@@ -1,0 +1,34 @@
+{
+    "admission" : [
+        "For admission details, visit our website or contact the admissions office.",
+        "Please refer to the admissions page on the University website for more information."
+    ],
+    "courses" : [
+        "We offer a variety of courses in computer science, business, and engineering.",
+        "Check out our course catalog on the website!"
+    ],
+    "library" : [
+        "The library is open from 9 AM to 7 PM during weekdays.",
+        "You can visit the library between 10 AM and 6 PM."
+    ],
+    "schedule" : [
+        "The campus schedule can be found on the student portal or app.",
+        "You can access the class schedule from the university website."
+    ],
+    "events" : [
+        "Upcoming campus events are listed on the university's events page.",
+        "Check the student portal for the latest events happening on campus."
+    ],
+    "student services" : [
+        "Student services are available on the 3rd floor, including counseling and career advice.",
+        "For academic support, you can visit the student services office in the main building."
+    ],
+    "food"  : [
+        "The campus dining hall serves breakfast, lunch, and dinner from 7 AM to 8 PM.",
+        "There are various food trucks located near the student union every day."
+    ],
+    "default"  : [
+        "I'm not sure about that. Can you ask something else?",
+        "That's an interesting question! Let me check back with you soon."
+    ]
+}
