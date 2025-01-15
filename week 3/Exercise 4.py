@@ -1,3 +1,8 @@
+'''Modify your program again so that the chosen password cannot be one of a list of
+common passwords, defined thus:
+BAD_PASSWORDS = ['password', 'letmein', 'sesame', 'hello', 'justinbieber']'''
+
+
 BAD_PASSWORDS = ['password', 'letmein', 'sesame', 'hello', 'justinbieber']
 password1 = input("Enter a new password: ")
 password2 = input("Re-enter the password: ")
