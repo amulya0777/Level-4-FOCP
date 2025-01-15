@@ -1,3 +1,6 @@
+'''Write a program that decrypts messages encoded as above.
+'''
+
 def decrypt_message(encrypted, interval):
     return ''.join([encrypted[i] for i in range(0, len(encrypted), interval)])
 

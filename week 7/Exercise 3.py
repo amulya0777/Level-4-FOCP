@@ -1,3 +1,10 @@
+'''Write a program that manages a list of countries and their capital cities. It should
+prompt the user to enter the name of a country. If the program already "knows"
+the name of the capital city, it should display it. Otherwise it should ask the user to
+enter it. This should carry on until the user terminates the program (how this
+happens is up to you).
+'''
+
 def country_capital_manager():
     countries = {}
     while True:

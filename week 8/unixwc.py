@@ -1,3 +1,7 @@
+'''The Unix wc command counts the number of lines, words, and characters in a file.
+Write an implementation of this that takes a file name as a command-line
+argument, and then prints the number of lines and characters.'''
+
 import sys
 
 if len(sys.argv) != 2:
