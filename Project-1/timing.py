@@ -2,8 +2,10 @@ import sys
 import os
 from tabulate import tabulate
 
+print("Usage: python timing.py <timing_file> <drivers_file>")
+
 if len(sys.argv) != 3:
-    print("Usage: python analyze_race.py <timing_file> <drivers_file>")
+    print("Usage: python timing.py <timing_file> <drivers_file>")
     sys.exit(1)
 
 timing_file = sys.argv[1]
