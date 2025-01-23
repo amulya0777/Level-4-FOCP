@@ -21,7 +21,7 @@ if not os.path.exists(drivers_file):
     print("Usage: python timing.py <timing_file> <drivers_file>")
     sys.exit(1)
 
-# Read driver details
+# read driver details
 driver_details = {}
 with open(drivers_file, "r") as file:
     for line in file:
@@ -30,7 +30,7 @@ with open(drivers_file, "r") as file:
             code, name, team = parts[1], parts[2], parts[3]
             driver_details[code] = {"name": name, "team": team}
 
-# Process timing file
+# process timing file
 with open(timing_file, "r") as file:
     lines = file.readlines()
 
@@ -38,7 +38,7 @@ if not lines:
     print("Timing file is empty.")
     sys.exit(1)
 
-# Race name
+# race name
 race_name = lines[0].strip()
 print(f"Race Name: {race_name}")
 
