@@ -1,0 +1,27 @@
+User: Amulya : when will the libary be open
+Agent: Error: No responses available.
+--------------------------------------------------
+User: Amulya : when will the library be open
+Agent: Error: No responses available.
+--------------------------------------------------
+User: Amulya : & C:/Users/user/AppData/Local/Programs/Python/Python39/python.exe c:/Users/user/Desktop/College/Level-4-FOCP/Project-2/chatbot.py
+Agent: Error: No responses available.
+--------------------------------------------------
+User: Amulya : & C:/Users/user/AppData/Local/Programs/Python/Python39/python.exe c:/Users/user/Desktop/College/Level-4-FOCP/Project-2/chatbot.py
+Agent: Error: No responses available.
+--------------------------------------------------
+User: Amulya : & C:/Users/user/AppData/Local/Programs/Python/Python39/python.exe c:/Users/user/Desktop/College/Level-4-FOCP/Project-2/chatbot.py
+Agent: Error: No responses available.
+--------------------------------------------------
+User: Amulya : & C:/Users/user/AppData/Local/Programs/Python/Python39/python.exe c:/Users/user/Desktop/College/Level-4-FOCP/Project-2/chatbot.py
+Agent: Error: No responses available.
+--------------------------------------------------
+User: amulya : where is the library
+Agent: Error: No responses available.
+--------------------------------------------------
+User: amulya : & C:/Users/user/AppData/Local/Programs/Python/Python39/python.exe c:/Users/user/Desktop/College/Level-4-FOCP/Project-2/chatbot.py
+Agent: Error: No responses available.
+--------------------------------------------------
+User: sara : where is the library
+Agent: Error: No responses available.
+--------------------------------------------------

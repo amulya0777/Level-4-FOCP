@@ -1,0 +1,6 @@
+User: mary : where is the library
+Agent: The library is located in the main campus building, near the student services office.
+--------------------------------------------------
+User: mary : when will the library be open
+Agent: The library is open from 9 AM to 7 PM during weekdays.
+--------------------------------------------------

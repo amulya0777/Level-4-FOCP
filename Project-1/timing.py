@@ -13,10 +13,12 @@ drivers_file = sys.argv[2]
 
 if not os.path.exists(timing_file):
     print(f"Timing file {timing_file} does not exist.")
+    print("Usage: python timing.py <timing_file> <drivers_file>")
     sys.exit(1)
 
 if not os.path.exists(drivers_file):
     print(f"Drivers file {drivers_file} does not exist.")
+    print("Usage: python timing.py <timing_file> <drivers_file>")
     sys.exit(1)
 
 # Read driver details
@@ -46,7 +48,7 @@ fastest_driver = None
 total_lap_time = 0
 total_laps = 0
 
-# Process lap times
+# process lap times
 for line in lines[1:]:
     code = line[:3]
     try:
@@ -65,7 +67,7 @@ for line in lines[1:]:
         fastest_lap = time
         fastest_driver = code
 
-# Driver averages and fastest lap
+# driver averages and fastest lap
 driver_data = []
 for code, times in lap_times.items():
     avg_time = sum(times) / len(times)
@@ -79,16 +81,16 @@ for code, times in lap_times.items():
         f"{fastest_driver_lap:.3f}"
     ])
 
-# Sort the driver data, descending order.
+# sort the driver data in descending order.
 driver_data.sort(key=lambda x: float(x[4]), reverse=True)
 
-# Overall average lap time
+# overall average lap time
 if total_laps > 0:
     overall_average = total_lap_time / total_laps
 else:
     overall_average = None
 
-# Displaying the tables
+# displaying the tables
 print("\nDriver Performance (Fastest Lap in Descending Order):")
 print(tabulate(driver_data, headers=["Code", "Name", "Team", "Average Lap Time", "Fastest Lap"], tablefmt="grid"))
 

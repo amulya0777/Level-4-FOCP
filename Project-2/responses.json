@@ -1,43 +1,73 @@
 {
-    "admission" : [
-        "For admission details, visit our website or contact the admissions office.",
-        "Please refer to the admissions page on the University website for more information."
-    ],
-    "courses" : [
-        "We offer a variety of courses in computer science, business, and engineering.",
-        "Check out our course catalog on the website!"
-    ],
-    "library" : [
-        "The library is open from 9 AM to 7 PM during weekdays.",
-        "You can visit the library between 10 AM and 6 PM."
-    ],
-    "schedule" : [
-        "The campus schedule can be found on the student portal or app.",
-        "You can access the class schedule from the university website."
-    ],
-    "events" : [
-        "Upcoming campus events are listed on the university's events page.",
-        "Check the student portal for the latest events happening on campus."
-    ],
-    "student services" : [
-        "Student services are available on the 3rd floor, including counseling and career advice.",
-        "For academic support, you can visit the student services office in the main building."
-    ],
-    "food"  : [
-        "The campus dining hall serves breakfast, lunch, and dinner from 7 AM to 8 PM.",
-        "There are various food trucks located near the student union every day."
-    ],
-    "registration"  : [
-        "You can register for classes through the student portal",
-        "Class registration opens next week. Make sure to check your portal for details!"
-    ],
-    "clubs"  : [
-        "We have various student clubs, including sports, arts, and technology. Check them out at the student center!",
-        "You can join clubs during the annual Club Fair or by reaching out to the club coordinators."
-    ],
-
-    "default"  : [
-        "I'm not sure about that. Can you ask something else?",
-        "That's an interesting question! Let me check back with you soon."
-    ]
+    "responses": {
+        "admission": ["admission"],
+        "courses": ["courses"],
+        "what_courses": ["what","courses"],
+        "when_library": ["when","library"],
+        "where_library": ["where", "library"],
+        "library": ["library"],
+        "schedule": ["schedule"],
+        "events": ["events"],
+        "student services": ["student", "services"],
+        "food": ["food"],
+        "registration": ["registration"],
+        "clubs": ["clubs"]
+    },
+    "responses_data": {
+        "admission" : [
+            "For admission details, visit our website or contact the admissions office.",
+            "Please refer to the admissions page on the University website for more information."
+        ],
+        "courses" : [
+            "We offer a variety of courses in computer science, business, and engineering.",
+            "Check out our course catalog on the website!"
+        ],
+        "what_courses" : [
+            "We offer a variety of courses in computer science, business, and engineering.",
+            "Check out our course catalog on the website!"
+        ],
+        "when_library" : [
+            "The library is open from 9 AM to 7 PM during weekdays.",
+            "You can visit the library between 10 AM and 6 PM."
+        ],
+        "library" : [
+            "The library is open from 9 AM to 7 PM during weekdays.",
+            "You can visit the library between 10 AM and 6 PM.",
+            "The library is located in the main campus building, near the student services office.",
+            "It's on the 2nd floor of the west wing. You can't miss it!"
+        ],
+        "where_library": [
+            "The library is located in the main campus building, near the student services office.",
+            "It's on the 2nd floor of the west wing. You can't miss it!"
+        ],
+        "schedule" : [
+            "The campus schedule can be found on the student portal or app.",
+            "You can access the class schedule from the university website."
+        ],
+        "events" : [
+            "Upcoming campus events are listed on the university's events page.",
+            "Check the student portal for the latest events happening on campus."
+        ],
+        "student services" : [
+            "Student services are available on the 3rd floor, including counseling and career advice.",
+            "For academic support, you can visit the student services office in the main building."
+        ],
+        "food"  : [
+            "The campus dining hall serves breakfast, lunch, and dinner from 7 AM to 8 PM.",
+            "There are various food trucks located near the student union every day."
+        ],
+        "registration"  : [
+            "You can register for classes through the student portal",
+            "Class registration opens next week. Make sure to check your portal for details!"
+        ],
+        "clubs"  : [
+            "We have various student clubs, including sports, arts, and technology. Check them out at the student center!",
+            "You can join clubs during the annual Club Fair or by reaching out to the club coordinators."
+        ],
+    
+        "default"  : [
+            "I'm not sure about that. Can you ask something else?",
+            "That's an interesting question! Let me check back with you soon."
+        ]
+    }
 }

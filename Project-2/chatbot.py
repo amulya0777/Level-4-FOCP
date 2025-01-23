@@ -1,3 +1,4 @@
+import os
 import random
 import json
 import time
@@ -7,10 +8,16 @@ import datetime
 def load_responses():
     try:
         with open('responses.json', 'r') as file:
-            return json.load(file)
+            data = json.load(file)
+            # ensure both keys exist
+            if "responses" in data and "responses_data" in data:
+                return data
+            else:
+                raise KeyError("Missing responses or responses_data in the JSON.")
     except FileNotFoundError:
         print("Error: responses.json file not found.")
-        return {}
+        return {"responses": {}, "responses_data": {"default": ["Error: No responses available."]}}
+
 #generate agent names, 6 first names and 6 last names = 36 Names
     
 def generatename():
@@ -32,7 +39,7 @@ def log_convo(user_name, user_input, response):
 
 def agentrespond(user_input, responses, user_name):
     user_input = user_input.lower()
-    # date time response 
+    words = set(user_input.split())  # split input into individual words
 
     if "date" in user_input:
         current_date = datetime.date.today()  # get today's date
@@ -41,12 +48,16 @@ def agentrespond(user_input, responses, user_name):
     elif "time" in user_input:
         current_time = datetime.datetime.now().time()  # get current time
         return f"The time is {current_time}"
+    else:
+    # check for matches in the keyword-response mapping
+        for response_key, keywords in responses["responses"].items():
+            if set(keywords).issubset(words):  # check if all keywords are in user input
+                response_list = responses["responses_data"].get(response_key, responses["responses_data"]["default"])
+                return random.choice(response_list).format(user_name=user_name)
 
-    for keyword, response_list in responses.items():
-        if keyword in user_input:
-            response = random.choice(response_list)
-            return response.format(user_name=user_name)
-    return random.choice(responses["default"])
+        # default response
+        return random.choice(responses["responses_data"]["default"])
+
 
 # main chatbot
 
@@ -62,8 +73,9 @@ def main():
     time.sleep(1)
     user_name = input('Before we start, may I ask what your name is? : ')
     time.sleep(1)
-    if user_name == agent_name.split()[0]:
+    if user_name.lower() == agent_name.split()[0].lower():
         print('It seems like we both share the same name. ')
+        print(f'Greetings {user_name}!')
     else:
         print(f'Greetings {user_name}!')
 
